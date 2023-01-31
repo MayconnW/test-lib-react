@@ -26458,7 +26458,6 @@ var require_react_dom_development = __commonJS({
                 ("" + errorBoundaryMessage);
               console["error"](combinedMessage);
             } else {
-              console["error"](error2);
             }
           } catch (e) {
             setTimeout(function () {
@@ -32942,7 +32941,6 @@ var require_react_dom_development = __commonJS({
             node.sibling.return = node.return;
             node = node.sibling;
           }
-          return true;
         }
         function markRootSuspended$1(root2, suspendedLanes) {
           suspendedLanes = removeLanes(
@@ -34585,7 +34583,6 @@ var require_react_dom_development = __commonJS({
               node = node.sibling;
             }
           }
-          return false;
         }
         var hasBadMapPolyfill;
         {
@@ -36605,7 +36602,7 @@ var Greeting = () => {
   });
 };
 var GreetingApp = w(Greeting, import_react.default, ReactDOM);
-customElements.define("web-greeting", GreetingApp);
+window.customElements.define("web-greeting", GreetingApp);
 /**
  * @license React
  * react-dom.development.js
